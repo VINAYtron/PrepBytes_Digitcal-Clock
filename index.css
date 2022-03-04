@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: #3d087b;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    background-color: #3d087b;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-left, .grid-right {
+    height: 65vh;
+}
+
+.clock {
+    background-image: url(./assets/clock_logo.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 25px;
+    left: 200px;
+    width: 13em;
+    height: 4.8em;
+}
+
+.set-time {
+    position: relative;
+    top: -120px;
+    left: 200px;
+    width: 35.2em;
+    height: 22.7em;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+}
+
+.set-wakeup {
+    position: relative;
+    top: 13px;
+    left: 23px;
+    width: 32.8em;
+    height: 3em;
+}
+
+.set-lunch {
+    position: relative;
+    top: 60px;
+    left: 23px;
+    width: 32.8em;
+    height: 3em;
+}
+
+.set-nap {
+    position: relative;
+    top: 110px;
+    left: 23px;
+    width: 32.8em;
+    height: 3em;
+
+}
+
+.set-night {
+    position: relative;
+    top: 160px;
+    left: 23px;
+    width: 32.8em;
+    height: 3em;
+}
+
+.wakeup-logo {
+    background-image: url(./assets/wake_up.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.lunch-logo {
+    background-image: url(./assets/lunch_time.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.nap-logo {
+    background-image: url(./assets/nap_time.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.night-logo {
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    width: 1em;
+    height: 1em;
+    color: #3D087C;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.wakeup-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+    color: #3d087b;
+    position: absolute;
+    top: 11px;
+    left: 55px;
+    width: 8em;
+    height: 1.2em;
+}
+
+.lunch-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+    color: #3d087b;
+    position: absolute;
+    top: 13px;
+    left: 55px;
+    width: 7em;
+    height: 1.2em;
+}
+
+.nap-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+    color: #3d087b;
+    position: absolute;
+    top: 12px;
+    left: 55px;
+    width: 6em;
+    height: 1.2em;
+}
+
+.night-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1em;
+    color: #3d087b;
+    position: absolute;
+    top: 12px;
+    left: 55px;
+    width: 6.5em;
+    height: 1.2em;
+}
+
+.wakeup-dropdown {
+    position: absolute;
+    top: 2px;
+    left: 237px;
+    width: 20em;
+    height: 3em;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    color: #3d087bde;
+    font-size: 0.9em;
+}
+
+.lunch-dropdown {
+    position: absolute;
+    left: 237px;
+    width: 20em;
+    height: 3em;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    color: #3d087bde;
+    font-size: 0.9em;
+}
+
+.nap-dropdown {
+    position: absolute;
+    left: 237px;
+    width: 20em;
+    height: 3em;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    color: #3d087bde;
+    font-size: 0.9em;
+}
+
+.night-dropdown {
+    position: absolute;
+    left: 237px;
+    width: 20em;
+    height: 3em;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    color: #3d087bde;
+    font-size: 0.9em;
+}
+
+.dropdown-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9em;
+    color: #3d087bde;
+    letter-spacing: 0.25px;
+}
+
+.line1 {
+    width: 1px;
+    height: 32px;
+    background-color: lightgray;
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    border-radius: 4px;
+}
+
+.line2 {
+    width: 1px;
+    height: 32px;
+    background-color: lightgray;
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    border-radius: 4px;
+}
+
+.line3 {
+    width: 1px;
+    height: 32px;
+    background-color: lightgray;
+    position: absolute;
+    top: 260px;
+    left: 40px;
+    border-radius: 4px;
+}
+
+.good-wish {
+    position: relative;
+    top: -110px;
+    left: 200px;
+    width: 35.1em;
+    height: 5em;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.23;
+}
+
+.good-wish-text {
+    position: relative;
+    top: -168px;
+    left: 230px;
+    width: 15.1em;
+    height: 1.2em;
+    font-family: wishfont;
+    font-size: 1.7em;
+    color: white;
+    opacity: 1;
+}
+
+.alarm-button {
+    position: relative;
+    top: -130px;
+    left: 200px;
+    width: 19em;
+    height: 3em;
+    background-image: linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%);
+    border-radius: 4px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.alarm-button:hover {
+    background-image: linear-gradient(113deg, #f1a7c5 0%, #fc5eff 40%, #cb52f8 81%, #6e54ec 100%);
+}
+
+.set-alarm {
+    position: relative;
+    top: 7px;
+    left: 105px;
+    width: 12em;
+    height: 3em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.alarm-button:hover .set-alarm{
+    display: none;
+}
+
+.alarm-button:hover:before {
+    position: relative;
+    top: 7px;
+    left: 105px;
+    width: 125px;
+    height: 31px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    content: "Party time!";
+}
+
+.timing-container {
+    position: relative;
+    top: -180px;
+    left: 512px;
+    width: 15.5em;
+    height: 7.2em;
+    background-color: white;
+    opacity: 0.23;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+.timing {
+    position: relative;
+    top: -288px;
+    left: 530px;
+    width: 15em;
+    height: 7em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #F25cfe;
+}
+
+.time-outer {
+    position: relative;
+    top: -25px;
+    left: 795px;
+    width: 33.5em;
+    height: 10.5em;
+}
+
+.time-container {
+    position: relative;
+    width: 33.5em;
+    height: 8.4em;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 3;
+}
+
+.time-inner {
+    position: relative;
+    top: 20px;
+    left: 38px;
+    width: 28.5em;
+    height: 5.8em;
+}
+
+.time-text {
+    position: absolute;
+    top: 34px;
+    width: 2.5em;
+    height: 1.2em;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3d087b;
+}
+
+.time-index2 {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    width: 28em;
+    height: 8.2em;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.53;
+    z-index: 2;
+}
+
+.time-index1 {
+    position: absolute;
+    top: 35px;
+    left: 67px;
+    width: 25em;
+    height: 8em;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.23;
+    z-index: 1;
+}
+
+.hours-box {
+    position: absolute;
+    left: 70px;
+    width: 5.1em;
+    height: 5.7em;
+    background-color: #F6E2FF;
+}
+
+.mins-box {
+    position: absolute;
+    left: 170px;
+    width: 5.1em;
+    height: 5.7em;
+    background-color: #F6E2FF;
+}
+
+.secs-box {
+    position: absolute;
+    left: 270px;
+    width: 5.1em;
+    height: 5.7em;
+    background-color: #F6E2FF;
+}
+
+.ampm-box {
+    position: absolute;
+    right: 0px;
+    width: 5.1em;
+    height: 5.7em;
+    background-image: linear-gradient(180deg, #AF53F4 0%, #E659FC);
+}
+
+.colon1 {
+    position: absolute;
+    top: 18px;
+    left: 156px;
+    width: 0.3em;
+    height: 1em;
+    color: #8a11bf;
+    font-size: 2.3em;
+}
+
+.colon2 {
+    position: absolute;
+    top: 18px;
+    left: 256px;
+    width: 0.3em;
+    height: 1em;
+    color: #8a11bf;
+    font-size: 2.3em;
+}
+
+.hours-number, .mins-number, .secs-number {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 1.1em;
+    height: 1.1em;
+    font-size: 2.3em;
+    color: #8a11bf;
+}
+
+.hours-text, .mins-text, .secs-text {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    width: 2.4em;
+    height: 1.2em;
+    font-size: 1.6em;
+    color: #8a11bf;
+}
+
+.ampm-text {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    width: 1.6em;
+    height: 1.2em;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.3em;
+    color: white;
+}
+
+.msg-img-container {
+    position: relative;
+    top: -10px;
+    left: 30px;
+    width: 33.5em;
+    height: 28.7em;
+    background-color: white;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+
+.msg {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 16.5em;
+    height: 1.3em;
+    font-family: wishfont;
+    font-size: 1.9em;
+    color: #8e53f0;
+}
+
+.img {
+    position: absolute;
+    top: 135px;
+    width: 33.5em;
+    height: 20.2em;
+    background-image: url(./assets/morning.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+
+
+
